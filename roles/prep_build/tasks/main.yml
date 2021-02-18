@@ -1,0 +1,17 @@
+---
+# tasks file for prep_build
+- name: Install jdk
+  apt:
+    name: default-jdk
+    state: present
+    update_cache: yes
+
+- name: Install GIT
+  apt:
+    name: git
+    state: present
+
+- name: Install maven
+  apt:
+    name: maven
+    state: present

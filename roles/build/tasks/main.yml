@@ -1,0 +1,10 @@
+---
+# tasks file for build
+- name: Clone project from github 
+  git:
+    repo: 'https://github.com/boxfuse/boxfuse-sample-java-war-hello.git'
+    dest: /home/GIT/boxfuse
+    clone: yes
+
+- name: Build java app 
+  command: mvn -f /home/GIT/boxfuse/pom.xml clean package
