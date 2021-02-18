@@ -1,0 +1,17 @@
+---
+- name: Building java app
+  hosts: build
+  become: yes
+
+  roles:
+    - prep_bild
+    - build
+
+- name: Publishing java app
+  hosts: web
+  become: yes
+
+  roles:
+    - prep_web
+    - web
+---
