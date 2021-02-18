@@ -1,4 +1,4 @@
 ---
 # handlers file for prepare_web
 - name: restart tomcat9
-  service: name=tomcat9 state=restarted
+  service: name=tomcat9 state=started
