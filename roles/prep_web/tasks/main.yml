@@ -11,4 +11,4 @@
     name: tomcat9
     state: present
   notify:
-    - restart tomcat9
+    - start tomcat9
